@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Custom styles for emergency UI */
+.emergency-glow {
+  box-shadow: 0 0 25px rgba(225, 29, 72, 0.45), 0 4px 14px rgba(225, 29, 72, 0.35);
+}
+
+.emergency-glow-active {
+  box-shadow: 0 0 35px rgba(225, 29, 72, 0.7), 0 0 15px rgba(225, 29, 72, 0.9);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.map-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
